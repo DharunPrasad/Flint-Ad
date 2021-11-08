@@ -4,6 +4,7 @@
     --grey-color-bg : #dbd4c2;
     --orange-color-bg : #d67f5c;
     --silver-color-bg : #c8c8c8;
+    --black-color-bg : #857a7a;
     --primary--color : #b1c7a3;
     --secondary-color : #bd8458;
     --tertiary-color : #410505;
@@ -37,6 +38,10 @@ body{
   body {
     -ms-overflow-style: none;  /* IE and Edge */
  
+  }
+
+  button{
+      cursor: pointer;
   }
 .nav-bar{
     background-color: var(--primary--color);
@@ -112,7 +117,7 @@ body{
 .hero-section{
     background-color: var(--blue-color-bg);
     width: 100%;
-    height: fit-content;
+    height: 80vh;
     margin-top: 10rem;
     padding : 10rem 0;
 }
@@ -259,7 +264,7 @@ margin-right: 2.2rem;
 }
 
 /* About us section */
-.about-us-section{
+.services-section{
     background-color: var(--grey-color-bg);
     height: fit-content;
     width: 100%;
@@ -272,12 +277,12 @@ margin-right: 2.2rem;
 /*---------- USED IN ALL SECTIONS!!!!------------- */
 
 
-.about-us-header, .portfolio-header,.blog-header{
+.services-header, .clients-header,.blog-header,.career-header, .footer-header{
     display: flex;
     justify-content: space-between;
     width: 70%;
     height: fit-content;
-    margin : 0 auto;
+    margin : 0 auto 10rem;
 }
 
 
@@ -304,24 +309,34 @@ margin-right: 2.2rem;
     width: 80%;
     height: fit-content;
     margin : 4rem auto 0;
-    display: flex;
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    grid-template-rows: auto auto;
+    grid-gap: 4rem;
     /* border: 2px solid black; */
 
 }
 
-.flex-section-aboutus{
+.grid-section-aboutus{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    /* width: 35%; */
+    /* border: 2px solid black; */
+    
 }
 
-.flex-section-aboutus h2, .flex-section-aboutus p{
+.grid-section-aboutus h2{
     text-align: center;
     margin: 1rem 0;
     color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 150%;
+}
+.creative-desinging{
+    padding-bottom: 10%;
 }
 
-.imagePlaceholder-aboutus{
+.image-services{
     width:20rem;
     height : 20rem;
     margin : 2rem auto;
@@ -331,10 +346,10 @@ margin-right: 2.2rem;
     outline-offset: -1rem;
 }
 
-.aboutus-details-1, .aboutus-details-2{
+.service-details{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    text-align: left !important;
+    text-align:center;
     color : #000 !important;
     font-size: 1.4rem;
     line-height: 150%;
@@ -343,7 +358,7 @@ margin-right: 2.2rem;
 
 
 /* Portfolia section */
-.portfolio-section{
+.clients-section{
     padding: 4rem 0 ;
     background-color: var(--orange-color-bg);
 }
@@ -400,7 +415,7 @@ margin-right: 2.2rem;
     width: 18rem;
     height: 18rem;
     margin: 0 auto;
-    background-color: var(--secondary-color);
+    background-color: var(--silver-color-bg);
 }
 
 .center-circle{
@@ -430,9 +445,7 @@ margin-right: 2.2rem;
     padding: 4rem 0;
 }
 
-.blog-header{
-    margin-bottom: 10rem;
-}
+
 .blog-section-container{
     width: 80%;
     margin : 4rem auto;
@@ -443,7 +456,10 @@ margin-right: 2.2rem;
     width: 70%;
     
 }
-
+/* 
+.blog-title{
+    padding-left: 20%;
+} */
 
 .blog-section-container{
     margin-top: 4rem;
@@ -509,11 +525,14 @@ margin-right: 2.2rem;
     padding : .5rem 1rem;
     }
 
-    .search-input-container div{
+    .search-input-container button{
+        font-family: var(--font-family);
         background-color: #000;
         color : var(--silver-color-bg);
         width : 15%;
         height: 3rem;
+        outline: none;
+        border: none;
 
         display: flex;
         justify-content: center;
@@ -551,3 +570,79 @@ margin-right: 2.2rem;
     .comments-section{
         margin-top: -2.5rem;
     }
+
+
+    /* Career Section */
+
+    .career-section{
+        width: 100%;
+        background-color: var(--blue-color-bg);
+        height: 60vh;
+        padding-top: 4rem;
+    }
+
+    .career-container{
+        width: 80%;
+        margin : 0 auto;
+        text-align: center;
+    }
+
+    .career-container h3{
+        font-size: 5rem;
+    }
+
+    .career-container button{
+        font-family: var(--font-family);
+        border:  none;
+        background-color: var(--primary--color);
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        margin-top: 4rem;
+    }
+
+/* footer section */
+.footer-section{
+    background-color: var(--black-color-bg);
+    padding: 2rem 0;
+}
+
+.footer-header{
+    width: 80%;
+    /* border : 2px solid black; */
+}
+.phone-container,.email-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    color :var(--tertiary-color);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: 1rem 0;
+}
+
+.footer-secondary-details{
+    display: flex !important;
+}
+.contact{
+    padding-left: 5rem;
+}
+.bi{
+    fill :var(--tertiary-color);
+    margin-right: 2rem;
+}
+.social-media{
+    width: 40%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* border: 2px solid #fff; */
+}
+
+
+.media-icon{
+    width: 10%;
+    height: auto;
+}

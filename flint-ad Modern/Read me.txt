@@ -1,0 +1,9 @@
+Opening page animation
+
+As soon as the page is opened the "Welcome to flintad" heading drops from nowhere
+
+After 1 second the heading fades out towards its left with some tilt animation (Rotate)
+
+Once the heading animation is over A picture will be displayed (using opacity) 
+
+Form behind that picture services section will be displayed

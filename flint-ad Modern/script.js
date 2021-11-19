@@ -4,6 +4,59 @@ const mainHeading = document.querySelector(".main-heading");
 const tagLine = document.querySelector(".tag-line");
 
 
+const toggleBtn = document.querySelector(".checkbox");
+
+const togglebtnContainer = document.querySelector(".checkbox-container");
+
+let bool = false;
+
+const removePropertyFunc = (property) =>{
+    toggleBtn.style.removeProperty(`${property}`);
+}
+togglebtnContainer.addEventListener("click", function(){
+    bool = bool ? false : true
+    console.log(bool)
+
+
+    if(bool === true){
+        toggleBtn.style.position = "absolute";
+        toggleBtn.style.right = "-3%";
+        toggleBtn.style.top = "-5%";
+       removePropertyFunc("left");
+
+        document.body.style.backgroundColor = "#261C2C";
+
+        document.body.style.color = "#fff";
+
+        togglebtnContainer.style.border = "2px solid #fff"
+
+        toggleBtn.style.backgroundColor = "#fff"
+    }
+    
+    if(bool === false){
+        toggleBtn.style.position = "absolute";
+        toggleBtn.style.left = "-3%";
+        toggleBtn.style.top = "-5%";
+
+
+        document.body.style.backgroundColor = "#fff";
+
+        document.body.style.color = "#000";
+       
+
+       removePropertyFunc("right");
+       toggleBtn.style.backgroundColor = "#000";
+
+       togglebtnContainer.style.border = "2px solid #000";
+
+
+    }
+    
+})
+
+
+
+
 const gridContent = document.querySelectorAll(".grid-content");
 const serviceBtn = document.querySelectorAll(".service-button");
 mainHeading.style.opacity = "0";
@@ -38,53 +91,3 @@ gridContent.forEach((content,i )=> {
 
 
 
-
-const done = document.querySelector(".doneBtn");
-const form = document.querySelector(".form-container");
-const completed = document.querySelector(".completed");
-const completedSpan = document.querySelector(".completed-span");
-const completedPara = document.querySelector(".completed-para")
-const completedImg = document.querySelector(".circle-checked");
-const inputTags = document.querySelectorAll(".input-tag");
-
-const nameForm = document.querySelector(".name-form");
-const emailForm = document.querySelector(".email-form");
-const phoneForm = document.querySelector(".phone-form");
-const messageForm = document.querySelector(".message-form")
-
-
-
-
-
-done.addEventListener("click",function(e){
-    e.preventDefault()
-    if(messageForm.value.length < 50){
-      label.textContent = "Enter more than 50 Characters";
-      label.style.color = "#ff0000";
-    }
-
-
-    if(nameForm.value.length >= 1 && emailForm.checkValidity() && !isNaN(Number(phoneForm.value))&&  messageForm.value.length > 10){
-completed.style.opacity = "1";
-form.style.opacity = "0";
-
-completed.style.zIndex = "10";
-form.style.zIndex = "-10"
-
-setTimeout(function(){
-    completedSpan.style.opacity = "1";
-    completedPara.style.opacity ="1";
-},500)
-
-
-completedImg.classList.add("circle-animation");
-completedImg.style.transform = `scale(1) translateX(0)`;
-
-inputTags.forEach(input => {
-  input.value = ""
-
-});
-
-    }
- 
-})

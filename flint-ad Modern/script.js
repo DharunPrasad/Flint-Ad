@@ -6,19 +6,33 @@ const tagLine = document.querySelector(".tag-line");
 
 const toggleBtn = document.querySelector(".checkbox");
 
+const toggleMobBtn = document.querySelector(".checkbox-mob")
+
 const togglebtnContainer = document.querySelector(".checkbox-container");
 
-let bool = false;
+const togglebtnContainerMob = document.querySelector(".checkbox-container-mob")
+
+const hamburger = document.querySelector(".mob-nav-btn");
+const crossBtn = document.querySelector(".mobile-nav > span");
+const mobNav = document.querySelector(".mobile-nav");
+
+let bool1 = false;
+let bool2 = false;
 
 const removePropertyFunc = (property) =>{
     toggleBtn.style.removeProperty(`${property}`);
 }
+
+const removePropertyFucMob = (property) =>{
+    toggleMobBtn.style.removeProperty(`${property}`)
+}
+
 togglebtnContainer.addEventListener("click", function(){
-    bool = bool ? false : true
-    console.log(bool)
+    bool1 = bool1 ? false : true
+    console.log(bool1)
 
 
-    if(bool === true){
+    if(bool1 === true){
         toggleBtn.style.position = "absolute";
         toggleBtn.style.right = "-3%";
         toggleBtn.style.top = "-5%";
@@ -33,7 +47,7 @@ togglebtnContainer.addEventListener("click", function(){
         toggleBtn.style.backgroundColor = "#fff"
     }
     
-    if(bool === false){
+    if(bool1 === false){
         toggleBtn.style.position = "absolute";
         toggleBtn.style.left = "-3%";
         toggleBtn.style.top = "-5%";
@@ -54,6 +68,50 @@ togglebtnContainer.addEventListener("click", function(){
     
 })
 
+togglebtnContainerMob.addEventListener("click", function(){
+    bool2 = bool2 ? false : true
+    console.log(bool2)
+
+
+    if(bool2){
+        toggleMobBtn.style.position = "absolute";
+        toggleMobBtn.style.right = "-3%";
+        toggleMobBtn.style.top = "-5%";
+        removePropertyFucMob("left");
+
+        document.body.style.backgroundColor = "#261C2C";
+
+        document.body.style.color = "#fff";
+
+        togglebtnContainerMob.style.border = "2px solid #fff"
+
+        toggleMobBtn.style.backgroundColor = "#fff"
+
+        document.querySelectorAll(".mob-nav-btn > span").forEach(btn => btn.style.backgroundColor = "#fff")
+    }
+    
+    if(bool2 === false){
+        toggleMobBtn.style.position = "absolute";
+        toggleMobBtn.style.left = "-3%";
+        toggleMobBtn.style.top = "-5%";
+
+
+        document.body.style.backgroundColor = "#fff";
+
+        document.body.style.color = "#000";
+       
+
+        removePropertyFucMob("right");
+       toggleMobBtn.style.backgroundColor = "#fff";
+
+       togglebtnContainerMob.style.border = "2px solid #fff";
+
+       document.querySelectorAll(".mob-nav-btn > span").forEach(btn => btn.style.backgroundColor = "#000")
+
+
+    }
+    
+})
 
 
 
@@ -91,3 +149,12 @@ gridContent.forEach((content,i )=> {
 
 
 
+// Mobile navigation
+hamburger.addEventListener("click",function(){
+    mobNav.style.transform = "translateX(0)";
+})
+
+crossBtn.addEventListener("click", function(){
+    mobNav.style.transform = "translateX(100%)";
+
+})

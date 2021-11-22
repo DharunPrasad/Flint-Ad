@@ -26,6 +26,14 @@ a {
   text-decoration: none;
 }
 
+.mob-mav-btn{
+  display: none;
+}
+
+.mobile-nav{
+  display: none;
+}
+
 .nav-bar {
   width: 80%;
   height: 10rem;
@@ -99,6 +107,8 @@ a {
 .hero-section {
   width: 100%;
   height: 75vh;
+
+  overflow-x: hidden;
 }
 
 .hero-section h1,
@@ -204,7 +214,6 @@ a {
 .services {
   width: 100%;
   height: fit-content;
-  height: fit-content;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
@@ -226,6 +235,7 @@ a {
   overflow: hidden;
   transition: all 0.5s;
   position: relative;
+  border-radius: 1rem;
   /* background-image: url(https://i.pinimg.com/originals/3f/7e/0a/3f7e0a1a2c272567c1f4c922cf446e4e.png); */
   background-position: center;
 }
@@ -386,22 +396,28 @@ a {
 }
 
 .clients-section {
-  width: 100%;
-  height: 100vh;
+  height: fit-content;
+  /* margin-top: 5rem; */
 
+}
+
+.clients-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: fit-content;
+
 }
 .client-heading{
     font-size: 4rem;
-    margin : 10rem 0 -5rem 5rem;
+    margin : 10rem 0 5rem 5rem;
 }
 
 .card-container{
     width: 25%;
     height: fit-content;
     color : #000;
+    margin-bottom: 4rem;
 }
 .card {
   perspective: 150rem;
@@ -426,6 +442,9 @@ a {
 }
 .card__side--back {
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__side--back-1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
@@ -516,23 +535,21 @@ a {
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
 }
-.card__cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  text-align: center;
-}
+
 .card__price-box {
   text-align: center;
   color: #fff;
   line-height: 150%;
   margin-bottom: 8rem;
+  /* border: 2px solid black; */
+height: fit-content;
+
+
 }
 .card-contact{
   font-size: 2.5rem;
   width: 100%;
+  height: fit-content;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }

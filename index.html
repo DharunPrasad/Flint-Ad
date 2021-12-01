@@ -4,333 +4,207 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flind Ad</title>
-    <link href = "animation.css" rel = "stylesheet">
-    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Flint-Ad welcomes you</title>
   </head>
+
   <body>
-    <nav class="nav-bar">
-      <a class="nav" href="#home">HomE</a>
-      <a class="nav" href="#services">ServiceS</a>
-      <a class="nav" href="#clients">ClientS</a>
-      <span class="imagePlaceholder"></span>
-      <a class="nav" href="#career">ContacT</a>
-      <a class="nav" href="#career">CareeR</a>
-      <a class="nav" href="#blog">BloG</a>
-    </nav>
-    <header class="hero-section" id = "home">
-      <h1 class="primary-heading">Flint aD</h1>
-      <section class="secondary-container">
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="secondary-heading">Welcome to Flint aD</div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </section>
-      <!-- <section class="header-carousal">
-        <div class="carousal-container">
-          <div class="imagePlaceholder"></div>
-          <div class="left-arrow-container">
-            <div class="left-arrow"></div>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-xl bg-white navbar-light fixed-top">
+      <div class="container-xl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fs-1 fw-bold"> Flint Ad </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="
+            collapse
+            navbar-collapse
+            justify-content-end
+            align-items-center
+          "
+          id="main-nav"
+        >
+          <ul class="navbar-nav fs-4">
+            <li class="nav-item p-2">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="form-check form-switch fs-3 ms-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Switch Mod</label
+            >
           </div>
-          <div class="right-arrow-container">
-            <span class="right-arrow">></span>
-          </div>
         </div>
-        <div class = "carousal-details">
-            <p class = "heading">THE FAN</p>
-            <p class = "details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ulabore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </section> -->
-      <section class = "heading-quote">
-          <span>"</span> Correct place to choose your serviceS <span>"</span>
-      </section>
-    </header>
-    <main class = "services-section section1" id = "services">
-      <header class = "services-header">
-        <div class = "secondary-title section1-title">
-          ServiceS
-        </div>
-        <div class = "secondary-details section1-detail">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-      </header>
-
-      <section class = "secondary-main-about-us-section">
-        <div class = "aboutus-section-1 grid-section-aboutus">
-          <h2>SociaL MediA ManagemenT</h2>
-          <div class = "image-services">
-          </div>
-          <p class = "service-details">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        
-        </div>
-
-        <div class = "aboutus-section-1 grid-section-aboutus">
-          <h2>PaiD SociaL MediA MarketinG</h2>
-          <div class = "image-services">
-          </div>
-          <p class = "service-details">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-
-        <div class = "aboutus-section-1 grid-section-aboutus">
-          <h2>PaiD PaY PeR ClicK GooglE AdS</h2>
-          <div class = "image-services">
-          </div>
-          <p class = "service-details">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-    
-        </div>
-
-        <div class = "aboutus-section-1 grid-section-aboutus">
-          <h2>SearcH EnginE OptimizatioN</h2>
-          <div class = "image-services">
-          </div>
-          <p class = "service-details">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        
-        </div>
-
-        <div class = "aboutus-section-1 grid-section-aboutus">
-          <h2>WeB DevelopmenT and ManagemenT</h2>
-          <div class = "image-services">
-          </div>
-          <p class = "service-details">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-      
-        </div>
-
-        <div class = "aboutus-section-1 grid-section-aboutus">
-          <h2 class = "creative-desinging">CreativE DesigninG</h2>
-          <div class = "image-services">
-          </div>
-          <p class = "service-details">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-      
-        </div>
-
-        
-      </section>
-    </main>
-
-    <main class = "clients-section sections section2" id = "clients">
-      <header class = "clients-header">
-        <div class = "secondary-title section2-title">
-          ClientS
-        </div>
-        <div class = "secondary-details section2-detail">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-      </header>
-      <!-- <div class = "filter">
-        <p>Filter bY</p>
-        <ul class = "filter-list">
-          <li class = "filter-item">all</li>
-          <li class = "filter-item">pictures</li>
-          <li class = "filter-item">videos</li>
-          <li class = "filter-item">text</li>
-        </ul>
-      </div> -->
-
-      <section class = "photo-display-section">
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-
-        <div class = "photo-container">
-          <div class = "inner-photo"></div>
-          <div class = "center-circle"></div>
-          <p></p>
-        </div>
-      </section>
-    </main>
-
-    <main class = "blog-section sections section3" id = "blog">
-        <header class = "blog-header">
-          <div class = "secondary-title blog-title section3-title">
-       OuR BloG
-          </div>
-          <div class = "secondary-details section3-detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-        </header>
-        <section class = "blog-section-container">
-          <div class = "primary-blog-section">
-            <div class = "blog-post">
-              <div class = "photo-container">
-                <div class = "inner-photo"></div>
-                <div class = "center-circle"></div>
-                <p></p>
-              </div>
-              <div class = "blog-details">
-                <div class = "blog-name">
-                  <h3>Cuba gallery a great lr resoursE</h3>
-                  <p>Author: <span>John Doe</span></p>
-                  <p>Category: <span>Photogray</span></p>
-                </div>
-                <div class = "blog-content">
-                  <p><span>Cuba Gallery</span> is a team of design and photographic enthusiasts who love to bring stunning imagery out into the open. They're based in New Zealand but enjoy seeing and dealing in work from all parts of the world. Their goal is to provide a great place for designers, photographers and artists to sell, share and see work of the highest standard...</p>
-                  <span>Continue Reading</span>
-                </div>
-              </div>
-            </div>
-
-            <div class = "blog-post">
-              <div class = "photo-container">
-                <div class = "inner-photo"></div>
-                <div class = "center-circle"></div>
-                <p></p>
-              </div>
-              <div class = "blog-details">
-                <div class = "blog-name">
-                  <h3>Cuba gallery a great lr resoursE</h3>
-                  <p>Author: <span>John Doe</span></p>
-                  <p>Category: <span>Photograhy</span></p>
-                </div>
-                <div class = "blog-content">
-                  <p><span>Cuba Gallery</span> is a team of design and photographic enthusiasts who love to bring stunning imagery out into the open. They're based in New Zealand but enjoy seeing and dealing in work from all parts of the world. Their goal is to provide a great place for designers, photographers and artists to sell, share and see work of the highest standard...</p>
-                  <span>Continue Reading</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class = "secondary-blog-section">
-            <div class = "search-section">
-              <h2  class  = "main-heading">SearcH</h2>
-              <p class = "sub-heading">Into my blog</p>
-              <div class = "search-input-container">
-                <input class = "search-input" type = text placeholder="search the blog">
-                <button>GO</button>
-              </div>
-            </div>
-            <div class = "categories-section">
-              <h2  class  = "main-heading">CategorieS</h2>
-              <p class = "sub-heading">Choose the argument</p>
-              <div class = "catogories-options">
-                <div class = "options">design</div>
-                <div class = "options">movies</div>
-                <div class = "options">music</div>
-                <div class = "options">design</div>
-                <div class = "options">movies</div>
-                <div class = "options">music</div>
-              </div>
-            </div>
-            <div class = "comments-section">
-              <h3 class  = "main-heading">CommentS</h3>
-              <p class = "sub-heading">The latest one</p>
-              <div class = "comments-container">
-                <p class = "comment">John doe //<span>This is a blog post</span></p>
-              </div>
-            </div>
-          </div>
-      </section>
-    </main>
-
-  
-
-    <footer class = "footer-section sections section4" id = "career">
-      <header class = "footer-header">
-        <div class = "secondary-title contact section4-title">
-     ContacT
-        </div>
-        <div class = "secondary-details section4-detail footer-secondary-details">
-          <div class = "phone-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-            </svg>
-         <p>+91 9837583203</p>
-         </div>
-         
-         <div class = "email-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-          </svg>
-          <p>email@flintad.com</p>
-          </div>
-          <div class = "address-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-            </svg>
-            <p>Address 1571-1599 Market Street
-              San Francisco</p>
-            </div>
-        </div>
-      </header>
-      <div class = "career-container">
-        <h3>Come work with uS</h3>
-        <button class = "click-to-apply"> Click to applY</button>
-        </div>
-      <div class = "social-media">
-        
-        <div class = "media-icon-container">
-         <img src = "assets/facebook.svg" class = "media-icon facebook">
-         </div>
-
-        <div class = "media-icon-container">
-        <img src = "assets/instagram.svg" class = "media-icon instagram">
-        </div>
-
-        <div class = "media-icon-container">
-    
-       <img src = "assets/twitter.svg" class = "media-icon twitter" >
-       </div>
-
-       <div class = "media-icon-container">
-      <img src = "assets/linkedin.svg" class = "media-icon linkedin">
-       </div>
-
-      
       </div>
-    </footer>
-    <script src = "script.js"></script>
+    </nav>
+
+    <!-- Intro section -->
+    <section class="intro-section"></section>
+
+    <!-- Movable Animation div -->
+    <div class="movables">
+      <div class="movable-container">
+        <div>Swiggy</div>
+        <div>Naturals</div>
+        <div>Zomato</div>
+        <div>Uber</div>
+        <div>Swiggy</div>
+        <div>Naturals</div>
+        <div>Zomato</div>
+        <div>Uber</div>
+      </div>
+    </div>
+    <!-- Services Section -->
+
+    <section class="services-section container p-3" id="services">
+      <div class="row my-4">
+        <div class="col-12 col-md-6">
+          <p class="fs-5">
+            Exceed your marketing goals thanks to programmatic advertising
+          </p>
+          <h2 class="fs-2">THE BEST ADVERTISING SOLUTIONS</h2>
+          <h3 class="fst-italic">JUST FOR YOU !!</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4 p-2">
+          <div class="card-box text-center">
+            <div class="front-side bg-light border border-2 p-3 ">
+              <h3>Social Media Management</h3>
+            </div>
+            <div class="back-side bg-light border border-2">
+               <p>* Lorem ipsum dolor sit amet </p>
+               <p>* Lorem ipsum dolor sit amet </p>
+               <p>* Lorem ipsum dolor sit amet </p>
+              <button class="btn btn-primary mt-3">Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 p-2">
+            <div class="card-box text-center">
+              <div class="front-side bg-light border border-2 p-3">
+                <h3>Paid Social Media Marketing</h3>
+              </div>
+              <div class="back-side bg-light border border-2">
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <button class="btn btn-primary mt-3">Explore</button>
+              </div>
+            </div>
+          </div>
+          <div class="col--6 col-lg-4 p-2">
+            <div class="card-box text-center">
+              <div class="front-side bg-light border border-2 p-3">
+                <h3>Paid P.P.C <br> (Google Ads)</h3>
+              </div>
+              <div class="back-side bg-light border border-2">
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <button class="btn btn-primary mt-3">Explore</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4 p-2">
+          <div class="card-box text-center">
+            <div class="front-side bg-light border border-2 p-3 ">
+              <h3>S.E.O</h3>
+            </div>
+            <div class="back-side bg-light border border-2">
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+              <button class="btn btn-primary mt-3">Explore</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 p-2">
+            <div class="card-box text-center">
+              <div class="front-side bg-light border border-2 p-3">
+                <h3>Website Development and Management</h3>
+              </div>
+              <div class="back-side bg-light border border-2">
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <button class="btn btn-primary mt-3">Explore</button>
+              </div>
+            </div>
+          </div>
+          <div class="col--6 col-lg-4 p-2">
+            <div class="card-box text-center">
+              <div class="front-side bg-light border border-2 p-3">
+                <h3>Creative Designing</h3>
+              </div>
+              <div class="back-side bg-light border border-2">
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <p>* Lorem ipsum dolor sit amet </p>
+                <button class="btn btn-primary mt-3">Explore</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="aboutus-section p-4" id = "aboutus">
+        <div class="row">
+            <div class="col-4 bg-light">
+                <div class = "team-box">
+                    <img src="" alt="Team Member">
+                    <p>
+                        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius perferendis animi sint in consequuntur cumque nostrum iure. Esse dolore perspiciatis facilis id rerum suscipit rem error impedit sint eveniet "
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>

@@ -91,3 +91,19 @@ html{
 .card-box:hover .back-side{
 transform: rotateY(0deg);
 }
+
+/* About us  */
+
+.team-box{
+    background-color: #fff;
+}
+
+.team-box img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 80px;
+    margin-top: -2rem;
+    outline:10px solid #fff;
+    height: auto;
+}

@@ -93,17 +93,96 @@ transform: rotateY(0deg);
 }
 
 /* About us  */
-
-.team-box{
-    background-color: #fff;
+.aboutus-section h3{
+    margin-bottom: 5rem;
 }
 
+.profile-container{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin: 5px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-container > *{
+    position: absolute;
+    top : 0;
+    left : 0;
+
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    text-align: center;
+}
+.profile-container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    font-size: 16px;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+}
+
+.profile-container:hover p{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.about-movable{
+    width  : 60%;
+    height: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 5rem !important;
+}
+
+.about-movable-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2.5rem;
+    height: inherit;
+    transform: translate(100%);
+    animation: Moving-bar 10s linear infinite;
+}
+
+.about-movable-container div{
+    margin-right: 2rem ;
+}
+
+.about-movable-logo{
+    width: 5rem;
+    height : 5rem;
+}
+
+/* Testimonial */
+/* .team-box{
+    background-color: #fff;
+}
+*/
+
+.testimonial-section{
+    margin-top: 5rem;
+}
+.testimonial-section h3{
+    margin-bottom: 5rem;
+}
 .team-box img{
     display: block;
     margin: 0 auto;
     border-radius: 50%;
     width: 80px;
-    margin-top: -2rem;
+    margin-bottom:-1rem;
     outline:10px solid #fff;
-    height: auto;
+    height: auto; 
+}
+
+.team-box p{
+    text-align: center;
+
 }

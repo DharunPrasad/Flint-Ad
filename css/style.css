@@ -3,6 +3,9 @@ html{
     scroll-behavior: smooth;
     
 }
+body{
+    overflow-x: hidden;
+}
 
 .intro-section{
     height: 100vh;
@@ -30,6 +33,19 @@ html{
 .movable-container > div{
     font-size:30px;
     /* margin: 0 1rem; */
+}
+
+.blob-container{
+    position: relative;
+}
+
+.blob-1{
+    width : 60%;
+    max-height: auto;
+    position: absolute;
+    right : -25%;
+    top : -50%;
+    /* border: 2px solid black; */
 }
 
 @keyframes Moving-bar {

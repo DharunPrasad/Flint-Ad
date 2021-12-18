@@ -9,8 +9,12 @@ body{
 
 .intro-section{
     height: 100vh;
-    background-color: #000;
-    margin-top: 5rem;
+    background-color: cyan;
+    /* margin-top: 4.5rem; */
+}
+
+.navbar{
+    transition: transform .5s;
 }
 
 .movables{
@@ -242,4 +246,27 @@ footer section > div:nth-child(1){
     align-items: center;
     justify-content: center;
     font-size: 5rem;
+}
+
+
+.dark-blue{
+    background-color: #020218;
+}
+
+@media screen and (max-width : 480px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .intro-section{
+        margin-top: 2rem;
+    }
+
+    .blob-1{
+        display: none;
+    }
+
+    .password{
+        margin-top: 1rem;
+    }
 }

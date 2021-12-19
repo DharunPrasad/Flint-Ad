@@ -15,6 +15,44 @@ const navAddFunc = (value) => {
     navbar.classList.add(`${value}`);
 }
 
+window.addEventListener("load", function(){
+    if(darkModeToggler.checked){
+        document.body.style.backgroundColor = "#242B2E";
+        document.querySelectorAll(".body-style").forEach(e => {
+            e.style.color = "#fff";
+    
+            //Nav bar
+            navAddFunc("bg-dark");
+            navbar.classList.remove("navbar-light");
+            navbar.classList.add("navbar-dark");
+            navAddFunc("text-light");
+            
+            // Nav link
+            navlink.forEach(el => el.classList.add("text-light"))
+    
+            //Services
+            serviceBox_front.forEach(el => {
+                el.classList.remove("bg-light");
+                el.classList.add("dark-blue");
+                el.classList.add("text-light");
+            })
+    
+            servicesBox_back.forEach(el => {
+                el.classList.remove("bg-light");
+                el.classList.add("dark-blue");
+                el.classList.add("text-light");
+            })
+    
+            //Vision and mission
+            vision_para.forEach(el => {
+                el.classList.remove("bg-light");
+                el.classList.add("text-light");
+                el.classList.add("bg-dark");
+            })
+        })
+    }
+})
+
 
 darkModeToggler.addEventListener("click",function(){
     if(darkModeToggler.checked){
@@ -93,20 +131,41 @@ darkModeToggler.addEventListener("click",function(){
 
 // Revieling the sections
 const section = document.querySelector(".intro-section");
-navbar.style.transform = "translateY(-100%)";
+// navbar.style.transform = "translateY(-100%)";
 const revobsCallback = (entries,observer) => {
   const [entry] = entries;
 //   if(!entry.isIntersecting) return
 
 if(!entry.isIntersecting){
     // observer.unobserve(entry.target);
-    navbar.style.transform = "translateY(0)";
+    // navbar.style.transform = "translateY(0)";
 
+    if(darkModeToggler.checked){
+    navbar.classList.add("bg-dark");
+    navbar.classList.remove("bg-transperant");
+    }
+
+    if(!darkModeToggler.checked){
+        navbar.classList.add("bg-light");
+        navbar.classList.remove("bg-transperant");
+    }
     console.log(entry)
 }
 
 if(entry.isIntersecting){
-    navbar.style.transform = "translateY(-100%)";
+    // navbar.style.transform = "translateY(-100%)";
+    navbar.classList.remove("bg-light");
+    navbar.classList.remove("bg-dark")
+    navbar.classList.add("bg-transperant");
+
+    darkModeToggler.addEventListener("click",function(){
+        if(darkModeToggler.checked){
+            navbar.classList.remove("bg-light");
+            navbar.classList.remove("bg-dark")
+            navbar.classList.add("bg-transperant");
+        }
+    })
+
 }
 // console.log(entry)
 
@@ -114,7 +173,7 @@ if(entry.isIntersecting){
 
 const revielingSectionObserver = new IntersectionObserver(revobsCallback,{
   root : null,
-  threshold :[0,1]
+  threshold :[0,.8]
 })
 
 revielingSectionObserver.observe(section);

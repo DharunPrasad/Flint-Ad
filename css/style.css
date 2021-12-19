@@ -14,7 +14,7 @@ body{
 }
 
 .navbar{
-    transition: transform .5s;
+    transition: all .5s;
 }
 
 .movables{
@@ -53,19 +53,21 @@ body{
 }
 
 .blob-2{
-    width : 40%;
+    width : 70%;
     max-height: auto;
     position: absolute;
-    left : -25%;
-    top : -10%;
+    left : -15%;
+    top : 40%;
+    z-index: -100;
 }
 
 .blob-3{
-    width : 40%;
+    width : 80%;
     max-height: auto;
     position: absolute;
-    right : -25%;
-    top : -20%;
+    right : -15%;
+    top : 50%;
+    z-index: -100;
 }
 @keyframes Moving-bar {
     0%{
@@ -99,6 +101,9 @@ body{
 
 
 
+}
+.services-section{
+    position: relative;
 }
 
 .front-side{
@@ -167,7 +172,9 @@ transform: rotateY(0deg);
     transform: translateX(0);
     opacity: 1;
 }
-
+.aboutus-section{
+    position: relative;
+}
 .about-movable{
     width  : 60%;
     height: fit-content;

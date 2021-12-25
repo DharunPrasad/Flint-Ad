@@ -149,7 +149,19 @@ if(!entry.isIntersecting){
         navbar.classList.add("bg-light");
         navbar.classList.remove("bg-transperant");
     }
-    console.log(entry)
+    
+    darkModeToggler.addEventListener("click",function(){
+        if(darkModeToggler.checked){
+            navbar.classList.remove("bg-light");
+            navbar.classList.add("bg-dark")
+            navbar.classList.remove("bg-transperant");
+        }
+        else{
+            navbar.classList.add("bg-light");
+            navbar.classList.remove("bg-dark")
+            navbar.classList.remove("bg-transperant");
+        }
+    })
 }
 
 if(entry.isIntersecting){
@@ -160,6 +172,11 @@ if(entry.isIntersecting){
 
     darkModeToggler.addEventListener("click",function(){
         if(darkModeToggler.checked){
+            navbar.classList.remove("bg-light");
+            navbar.classList.remove("bg-dark")
+            navbar.classList.add("bg-transperant");
+        }
+        else{
             navbar.classList.remove("bg-light");
             navbar.classList.remove("bg-dark")
             navbar.classList.add("bg-transperant");

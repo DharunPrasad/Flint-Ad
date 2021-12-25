@@ -10,11 +10,73 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
   />
+  <link href = "css/style.css" rel = "stylesheet">
   <link href = "css/services.css" rel = "stylesheet">
     <title>Services</title>
 </head>
 <body>
-    <section class ="container-lg" id = "social-media-management-section">
+    <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top" id = "navbar">
+        <div class="container-xxl" >
+            <span class="fs-1 fw-bold"> Flint Ad </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div
+            class="
+              collapse
+              navbar-collapse
+              justify-content-end
+              align-items-center
+            "
+            id="main-nav"
+          >
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item p-2">
+              <a class="nav-link" aria-current="page" href="index.html#">Home</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="index.html#services">Services</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="index.html#aboutus">About Us</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="index.html#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="index.html#caseStudy">Case Study </a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+            <div class="form-check form-switch fs-3 ms-3">
+              <input
+                class="form-check-input dark-mode-toggler"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+              <label class="form-check-label" for="flexSwitchCheckDefault"
+                >Switch Mod</label
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    <section class ="container-lg section-light" id = "social-media-management-section">
+        <img src = "assets/red-patch.png" class = "blob-3">
+
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
                 <h3 class  = "text-center">Social Media Management</h3>
@@ -24,7 +86,7 @@
         </div>
     </section>
 
-    <section class ="container-lg" id = "paid-social-media-marketing">
+    <section class ="container-lg section-light" id = "paid-social-media-marketing">
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
                 <h3 class  = "text-center">Paid Social Media Marketing</h3>
@@ -34,7 +96,7 @@
         </div>
     </section>
 
-    <section class ="container-lg" id = "paid-ppc">
+    <section class ="container-lg section-light" id = "paid-ppc">
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
                 <h3 class  = "text-center">Paid P.P.C</h3>
@@ -44,7 +106,9 @@
         </div>
     </section>
 
-    <section class ="container-lg" id = "seo">
+    <section class ="container-lg section-light" id = "seo">
+        <img src = "assets/red-patch.png" class = "blob-2">
+
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
                 <h3 class  = "text-center">S.E.O</h3>
@@ -54,7 +118,7 @@
         </div>
     </section>
 
-    <section class ="container-lg" id = "webstie-dev-man">
+    <section class ="container-lg section-light" id = "webstie-dev-man">
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
                 <h3 class  = "text-center">Website Development and Management</h3>
@@ -64,7 +128,9 @@
         </div>
     </section>
 
-    <section class ="container-lg" id = "creative-designing">
+    <section class ="container-lg section-light" id = "creative-designing">
+        <img src = "assets/red-patch.png" class = "blob-3">
+
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
                 <h3 class  = "text-center">Creative Designing</h3>
@@ -73,13 +139,103 @@
             </div>
         </div>
     </section>
-</body>
-<script
+    
+    <footer class="p-3">
+        <main class="row footer-container">
+          <div class="col-12 col-md-4">Flint Ad</div>
+          <div class="col-12 col-md-4">
+            <div>
+              <p>
+                Phone: <br />
+                +91 2349240204
+              </p>
+            </div>
+  
+            <div>
+              <p>Address:</p>
+              <p>
+                Pink Lemonade Communications Pvt. Ltd. 313/1, 7th Cross, Next to
+                Ranka Heights, Patel Rama Reddy Cross, Domlur Layout, Bangalore –
+                560071, Karnataka, India
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 ps-5">
+            <div>
+              <p>
+                Enquiries <br />
+                flintad@gmail.com
+              </p>
+            </div>
+            <div>
+              <p>Follow Us</p>
+              <p>F I T L</p>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 crossorigin="anonymous"
 ></script>
-<script src = "js/script.js">
+<script>
+    const togglerBtn = document.querySelector(".dark-mode-toggler");
+    const navbar = document.querySelector("#navbar");
+const navlink = document.querySelectorAll(".nav-link");
+const para_cont = document.querySelectorAll("section");
+
+// Nav Function creation
+const navRemoveFunc = (value) =>{
+    navbar.classList.remove(`${value}`);
+}
+
+const navAddFunc = (value) => {
+    navbar.classList.add(`${value}`);
+}
+
+
+    togglerBtn.addEventListener("click", function(){
+        if(togglerBtn.checked){
+            document.body.style.backgroundColor = "#242B2E";
+
+            para_cont.forEach(el => {
+                el.classList.remove("section-light");
+                el.classList.add("section-dark");
+            })
+
+             //Nav bar
+             navAddFunc("bg-dark");
+            navbar.classList.remove("navbar-light");
+            navbar.classList.add("navbar-dark");
+            navAddFunc("text-light");
+            
+            // Nav link
+            navlink.forEach(el => el.classList.add("text-light"))
     
+        }
+        else{
+            document.body.style.backgroundColor = "#fff";
+
+            
+                //  Navbar
+                navRemoveFunc("bg-dark");
+               navbar.classList.add("navbar-light");
+               navbar.classList.remove("navbar-dark");
+               navRemoveFunc("text-light");
+                
+                //Nav-link
+                navlink.forEach(el => el.classList.remove("text-light"))
+
+                
+                para_cont.forEach(el => {
+                el.classList.add("section-light");
+                el.classList.remove("section-dark");
+            })
+
+        }
+    })
 </script>
+</body>
+
 </html>

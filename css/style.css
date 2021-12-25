@@ -267,7 +267,7 @@ footer{
     overflow: hidden;
 }
 
-footer section > div:nth-child(1){
+.footer-container > div:nth-child(1){
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,7 +285,7 @@ footer section > div:nth-child(1){
     }
 
     .intro-section{
-        margin-top: 2rem;
+        margin-top: 0;
     }
 
     .blob-1, .blob-2, .blob-3{

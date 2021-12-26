@@ -71,49 +71,59 @@
           </div>
         </div>
       </nav>
-    <section class ="container-lg section-light" id = "case-1">
+    <section class ="container-lg section-light section-1" id = "case-1">
       <img src = "assets/red-patch.png" class = "blob-3">
 
         <div class = "row">
-            <div class = "col-12 col-md-6 para-cont ">
-                <h3 class  = "text-center">Case 1</h3>
+            <div class = "col-12 col-md-6 para-cont">
+                <h3 class  = "text-center">FMCG</h3>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi obcaecati ad non fugit perspiciatis expedita blanditiis impedit dolorum voluptates dolorem, at, eum repudiandae, optio consequatur quasi laborum nostrum ipsum architecto.</p>
             </div>
         </div>
     </section>
 
-    <section class ="container-lg section-light" id = "case-2">
+    <section class ="container-lg section-light section-2" id = "case-2">
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
-                <h3 class  = "text-center">Case 2</h3>
+                <h3 class  = "text-center">Services</h3>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi obcaecati ad non fugit perspiciatis expedita blanditiis impedit dolorum voluptates dolorem, at, eum repudiandae, optio consequatur quasi laborum nostrum ipsum architecto.</p>
             </div>
         </div>
     </section>
 
-    <section class ="container-lg section-light" id = "case-3">
+    <section class ="container-lg section-light section-3" id = "case-3">
       <img src = "assets/red-patch.png" class = "blob-2">
 
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
-                <h3 class  = "text-center">Case 3</h3>
+                <h3 class  = "text-center">E- Commerce </h3>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi obcaecati ad non fugit perspiciatis expedita blanditiis impedit dolorum voluptates dolorem, at, eum repudiandae, optio consequatur quasi laborum nostrum ipsum architecto.</p>
             </div>
         </div>
     </section>
 
-    <section class ="container-lg section-light" id = "case-4">
+    <section class ="container-lg section-light section-4" id = "case-4">
         <div class = "row">
             <div class = "col-12 col-md-6 para-cont ">
-                <h3 class  = "text-center">Case 4</h3>
+                <h3 class  = "text-center">Beauty</h3>
 
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi obcaecati ad non fugit perspiciatis expedita blanditiis impedit dolorum voluptates dolorem, at, eum repudiandae, optio consequatur quasi laborum nostrum ipsum architecto.</p>
             </div>
         </div>
     </section>
+
+    <section class ="container-lg section-light section-5" id = "case-4">
+      <div class = "row">
+          <div class = "col-12 col-md-6 para-cont ">
+              <h3 class  = "text-center">Fashion</h3>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi obcaecati ad non fugit perspiciatis expedita blanditiis impedit dolorum voluptates dolorem, at, eum repudiandae, optio consequatur quasi laborum nostrum ipsum architecto.</p>
+          </div>
+      </div>
+  </section>
     
     <footer class="p-3">
       <main class="row footer-container">
@@ -177,11 +187,6 @@ const navAddFunc = (value) => {
     togglerBtn2.addEventListener("click", function(){
         if(togglerBtn2.checked){
             document.body.style.backgroundColor = "#242B2E";
-
-            para_cont.forEach(el => {
-                el.classList.remove("section-light");
-                el.classList.add("section-dark");
-            })
 
              //Nav bar
              navAddFunc("bg-dark");

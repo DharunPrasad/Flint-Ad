@@ -29,8 +29,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: Moving-bar 15s linear infinite;
-    transform: translateX(100%);
+    animation: Moving-bar 30s linear infinite;
+    transform: translateX(80%);
 
 }
 
@@ -71,7 +71,7 @@ body{
 }
 @keyframes Moving-bar {
     0%{
-        transform: translateX(100%);
+        transform: translateX(80%);
     }
 
     100%{
@@ -80,6 +80,7 @@ body{
 }
 
 .card-box{
+    width: 80%;
     position: relative;
     height: 20rem;
     border-radius: 10px;
@@ -294,5 +295,8 @@ footer{
 
     .password{
         margin-top: 1rem;
+    }
+    .card-box{
+        width: 100%;
     }
 }

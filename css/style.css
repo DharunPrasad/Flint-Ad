@@ -6,7 +6,9 @@ html{
 body{
     overflow-x: hidden;
 }
-
+.rounded-oval{
+    border-radius: 100px;
+}
 .intro-section{
     height: 100vh;
     background-color: cyan;
@@ -56,7 +58,7 @@ body{
     width : 70%;
     max-height: auto;
     position: absolute;
-    left : -15%;
+    left : -17%;
     top : 40%;
     z-index: -100;
 }
@@ -77,6 +79,11 @@ body{
     100%{
         transform: translateX(-150%);
     }
+}
+
+.permanent-marker-font{
+
+font-family: 'Permanent Marker', cursive;
 }
 
 .card-box{
@@ -298,5 +305,9 @@ footer{
     }
     .card-box{
         width: 100%;
+    }
+
+    .case-study-mob{
+        text-align: center;
     }
 }

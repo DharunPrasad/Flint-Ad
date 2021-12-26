@@ -1,11 +1,13 @@
 .selection-btn-container{
     margin-top: 5rem;
     width: 70%;
+    height: fit-content;
 }
 
 .services-display-section{
     width: 80%;
     position: relative;
+    height: 50vh;
 }
 
 .card-container{
@@ -30,4 +32,11 @@
 .secondary-btns{
     margin-top: -.1rem !important;
 }
+}
+footer a{
+    color : #fff;
+    text-decoration: none;
+}
+footer a > img{
+    width: 3rem;
 }

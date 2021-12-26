@@ -1,0 +1,33 @@
+.selection-btn-container{
+    margin-top: 5rem;
+    width: 70%;
+}
+
+.services-display-section{
+    width: 80%;
+    position: relative;
+}
+
+.card-container{
+    position: absolute;
+    top : 0;
+    left :0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card-fmgc{
+    opacity: 1;
+}
+
+
+@media screen and (max-width : 1400px) {
+.btn{
+    margin-bottom: 1rem !important;
+}
+
+.secondary-btns{
+    margin-top: -.1rem !important;
+}
+}

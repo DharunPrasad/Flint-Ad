@@ -44,10 +44,8 @@ window.addEventListener("load", function(){
             })
     
             //Vision and mission
-            vision_para.forEach(el => {
-                el.classList.remove("bg-light");
-                el.classList.add("text-light");
-                el.classList.add("bg-dark");
+            document.querySelectorAll(".aboutus-section .card").forEach(el => {
+                el.classList.add("dark-blue")
             })
         })
     }
@@ -82,11 +80,9 @@ darkModeToggler.addEventListener("click",function(){
                 el.classList.add("text-light");
             })
 
-            //Vision and mission
-            vision_para.forEach(el => {
-                el.classList.remove("bg-light");
-                el.classList.add("text-light");
-                el.classList.add("bg-dark");
+               //Vision and mission
+               document.querySelectorAll(".aboutus-section .card").forEach(el => {
+                el.classList.add("dark-blue")
             })
         })
     }
@@ -118,10 +114,8 @@ darkModeToggler.addEventListener("click",function(){
             })
 
             //Vision and mission
-            vision_para.forEach(el => {
-                el.classList.add("bg-light");
-                el.classList.remove("text-light");
-                el.classList.remove("bg-dark");
+            document.querySelectorAll(".aboutus-section .card").forEach(el => {
+                el.classList.remove("dark-blue")
             })
 
 

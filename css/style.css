@@ -183,6 +183,10 @@ transform: rotateY(0deg);
 .aboutus-section{
     position: relative;
 }
+
+.aboutus-section .card{
+    width: 30%;
+}
 .about-movable{
     width  : 60%;
     height: fit-content;
@@ -194,7 +198,7 @@ transform: rotateY(0deg);
 .about-movable-container{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: fit-content;
     font-size: 2.5rem;
     height: inherit;
     transform: translate(100%);
@@ -206,8 +210,9 @@ transform: rotateY(0deg);
 }
 
 .about-movable-logo{
-    width: 100px;
+    width: 70px;
     height :auto;
+    margin: 0 1rem;
 }
 
 /* Testimonial */
@@ -256,7 +261,7 @@ transform: rotateY(0deg);
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    width: 80px;
+    width: 50px;
     margin-bottom:-1rem;
     outline:10px solid #fff;
     height: auto; 
@@ -285,6 +290,7 @@ footer{
 
 .dark-blue{
     background-color: #020218;
+    color : #fff;
 }
 
 @media screen and (max-width : 480px) {
@@ -309,5 +315,18 @@ footer{
 
     .case-study-mob{
         text-align: center;
+    }
+    .aboutus-section .card{
+        width: 100%;
+    }
+    .about-movable-container{
+        width: fit-content;
+    }
+
+    .about-movable-logo{
+        margin: 0 .5rem;
+    }
+    .contact-section textarea{
+        width: 100%;
     }
 }

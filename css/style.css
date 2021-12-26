@@ -20,14 +20,15 @@ body{
 }
 
 .movables{
-    height: 5rem;
+    height: fit-content;
     width: 100%;
     overflow: hidden;
   
 }
 
 .movable-container{
-    width: 150%;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,11 +37,12 @@ body{
 
 }
 
-.movable-container > div{
-    font-size:30px;
-    /* margin: 0 1rem; */
-}
 
+.main-movable-imgs{
+    width: 200px;
+    max-height: auto;
+    margin-right: 2rem;
+}
 .blob-container{
     position: relative;
 }

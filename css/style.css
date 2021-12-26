@@ -41,7 +41,7 @@ body{
 .main-movable-imgs{
     width: 200px;
     max-height: auto;
-    margin-right: 2rem;
+    margin-right: 10rem;
 }
 .blob-container{
     position: relative;
@@ -301,7 +301,7 @@ footer{
 
 @media screen and (max-width : 480px) {
     body{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     .intro-section{

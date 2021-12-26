@@ -1,0 +1,40 @@
+.testimonial-section{
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+.caro{
+    position: absolute;
+    top : 20%;
+    left : 0;
+    width: 100%;
+    transition: opacity .8s;
+}
+
+
+.caro-btn-container{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+.testimonial-section .img-cont{
+    width: 50%;
+    max-height: auto;
+}
+.caro-2, .caro-3, .caro-4{
+    opacity: 0;
+}
+
+@media screen and (max-width : 480px) {
+    .testimonial-section{
+        height: 100vh;
+    }
+.caro{
+    left : 5%;
+}
+
+.caro-btn-container{
+bottom: 0;
+right: 5%;
+}
+    }

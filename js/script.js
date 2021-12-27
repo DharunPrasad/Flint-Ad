@@ -6,6 +6,8 @@ const navlink = document.querySelectorAll(".nav-link");
 const serviceBox_front = document.querySelectorAll(".front-side");
 const servicesBox_back = document.querySelectorAll(".back-side");
 const vision_para = document.querySelectorAll(".profile-container p");
+const mainLogo = document.querySelector(".main-logo");
+
 // Nav Function creation
 const navRemoveFunc = (value) =>{
     navbar.classList.remove(`${value}`);
@@ -20,7 +22,9 @@ window.addEventListener("load", function(){
         document.body.style.backgroundColor = "#242B2E";
         document.querySelectorAll(".body-style").forEach(e => {
             e.style.color = "#fff";
-    
+            //main logo
+            mainLogo.src = "assets/2.png";
+
             //Nav bar
             navAddFunc("bg-dark");
             navbar.classList.remove("navbar-light");
@@ -57,7 +61,8 @@ darkModeToggler.addEventListener("click",function(){
         document.body.style.backgroundColor = "#242B2E";
         document.querySelectorAll(".body-style").forEach(e => {
             e.style.color = "#fff";
-
+            //main logo
+            mainLogo.src = "assets/2.png";
             //Nav bar
             navAddFunc("bg-dark");
             navbar.classList.remove("navbar-light");
@@ -90,6 +95,8 @@ darkModeToggler.addEventListener("click",function(){
         document.body.style.backgroundColor = "#fff";
         document.querySelectorAll(".body-style").forEach(e => {
             e.style.color = "#000";
+                            //main logo
+            mainLogo.src = "assets/1.png";
 
                 //  Navbar
                 navRemoveFunc("bg-dark");

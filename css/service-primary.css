@@ -7,7 +7,7 @@
 .services-display-section{
     width: 80%;
     position: relative;
-    height: 100vh;
+    height: 150vh;
 }
 
 .card-container{
@@ -47,7 +47,7 @@ footer a > img{
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
-    height: 70vh;
+    height: fit-content;
     margin-top: 5rem;
     margin-bottom: 5rem;
     color : #000;
@@ -55,7 +55,7 @@ footer a > img{
 
 .section-1{
     background-image: linear-gradient(
-        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/fmgc.jpg);
+        90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, #d9534f 50%);
 }
 
 /* .section-2{
@@ -65,13 +65,13 @@ footer a > img{
 
 .section-3{
     background-image: linear-gradient(
-        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/ecommerce.jpg);
+        90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, #d9534f 50%);
         background-position: right center;
 }
 
 .section-2{
     background-image: linear-gradient(
-        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/beauty.jpeg);
+        90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, #d9534f 50%);
         background-position: center;
 }
 /* .section-5{
@@ -131,7 +131,7 @@ width: 100%;
         background-image: none !important;
     }
     .services-display-section{
-    height: 150vh;
+    height: 200vh;
     }
     .selection-btn-container .row{
 margin-left: .2rem !important;

@@ -19,7 +19,10 @@ body::-webkit-scrollbar {
     background-color: rgb(207, 54, 54);
     border-radius: 30px;
   } 
-
+.main-logo{
+    width: 10%;
+    max-height: auto;
+}
 .rounded-oval{
     border-radius: 100px;
 }
@@ -327,7 +330,10 @@ footer{
     body{
         overflow-x: hidden !important;
     }
-
+    .main-logo{
+        width: 30%;
+        max-height: auto;
+    }
     .intro-section{
         margin-top: 0;
     }

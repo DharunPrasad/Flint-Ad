@@ -9,9 +9,8 @@ const vision_para = document.querySelectorAll(".profile-container p");
 const mainLogo = document.querySelector(".main-logo");
 
 
-const mob_desk = document.querySelector(".bg-video-desk video source");
-const mob_video = document.querySelector(".bg-video-mob video source");
-
+const mob_desk = document.querySelector(".bg-video-desk > video");
+const mob_video = document.querySelector(".bg-video-mob  > video");
 // Nav Function creation
 const navRemoveFunc = (value) =>{
     navbar.classList.remove(`${value}`);
@@ -26,6 +25,7 @@ navbar.classList.add("navbar-dark");
 
 
 window.addEventListener("load", function(){
+
     if(darkModeToggler.checked){
         document.body.style.backgroundColor = "#242B2E";
         document.querySelectorAll(".body-style").forEach(e => {

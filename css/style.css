@@ -115,6 +115,7 @@ body::-webkit-scrollbar {
 .permanent-marker-font{
 
 font-family: 'Permanent Marker', cursive;
+transform: rotate(-2deg);
 }
 
 .card-box{

@@ -133,7 +133,9 @@ width: 100%;
     .services-display-section{
     height: 150vh;
     }
-
+    .selection-btn-container .row{
+margin-left: .2rem !important;
+    }
 .card-container .h2{
     font-size: 1rem !important;
     margin-top: -2rem !important;
@@ -148,6 +150,10 @@ width: 100%;
     max-height: auto;
 
     margin-top: 5rem !important;
+}
+
+.beauty-img{
+    margin-top: 8rem !important;
 }
 
 .section-light{

@@ -20,6 +20,8 @@ const navRemoveFunc = (value) =>{
 const navAddFunc = (value) => {
     navbar.classList.add(`${value}`);
 }
+navlink.forEach(el => el.classList.add("text-light"))
+
 
 window.addEventListener("load", function(){
     if(darkModeToggler.checked){
@@ -146,6 +148,8 @@ const revobsCallback = (entries,observer) => {
 if(!entry.isIntersecting){
     // observer.unobserve(entry.target);
     // navbar.style.transform = "translateY(0)";
+    navlink.forEach(el => el.classList.remove("text-light"))
+    mainLogo.src = "assets/1.png"
 
     if(darkModeToggler.checked){
     navbar.classList.add("bg-dark");
@@ -172,6 +176,8 @@ if(!entry.isIntersecting){
 }
 
 if(entry.isIntersecting){
+    navlink.forEach(el => el.classList.add("text-light"))
+    mainLogo.src = "assets/2.png"
     // navbar.style.transform = "translateY(-100%)";
     navbar.classList.remove("bg-light");
     navbar.classList.remove("bg-dark")

@@ -314,7 +314,10 @@ footer{
     color : #fff;
     overflow: hidden;
 }
-
+.footer-logo{
+    width: 100%;
+    max-height: auto;
+}
 .footer-container > div:nth-child(1){
     display: flex;
     align-items: center;

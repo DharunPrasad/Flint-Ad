@@ -27,14 +27,14 @@
 
 @media screen and (max-width : 480px) {
     .testimonial-section{
-        height: 100vh;
+        height: 110vh;
     }
 .caro{
     left : 5%;
 }
 
 .caro-btn-container{
-bottom: 0;
+top: 10%;
 right: 5%;
 }
     }

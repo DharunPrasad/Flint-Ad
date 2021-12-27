@@ -192,20 +192,24 @@ revielingSectionObserver.observe(section);
 
 // Email js
 const submitBtn = document.querySelector("#submit-btn");
-const companyName = document.querySelector("inputCompany");
+const companyName = document.querySelector("#inputCompany");
 const firstName = document.querySelector("#inputFirstname");
 const lastName = document.querySelector("#inputLastname");
 const senderEamil = document.querySelector("#inputEmail");
 const senderPhone = document.querySelector("#inputPhone");
 const message = document.querySelector("#inputMessage");
 
-submitBtn.addEventListener("click", function(){
+submitBtn.addEventListener("click", function(e){
+    e.preventDefault()
     const obj = {
         from_firstname : firstName.value,
         from_lastname : lastName.value,
         companyName : companyName.value,
-        emailid : senderEamil,
-        phoneNo : phoneNo,
+        emailid : senderEamil.value,
+        phoneNo : senderPhone.value,
+        message : message.value
     }
-    emailjs.send("service_hwd0i8o");
+    emailjs.send("service_qw0kxqd", "template_sdpg2s1", obj).then(function(res){
+        console.log("success",res.status)
+    });
 })

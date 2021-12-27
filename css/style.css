@@ -40,7 +40,6 @@ body::-webkit-scrollbar {
     /* margin-top: 4.5rem; */
 }
 .mute-container{
-    background-color: #fff;
     position: absolute;
     z-index: 100;
     bottom: 5%;

@@ -36,7 +36,21 @@ body::-webkit-scrollbar {
 .intro-section{
     height: 100vh;
     overflow: hidden;
+    position: relative;
     /* margin-top: 4.5rem; */
+}
+.mute-container{
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    bottom: 5%;
+    right: 5%;
+}
+
+.mute-container img{
+    width: 30px;
+    max-height: auto;
+    cursor: pointer;
 }
 
 .navbar{
@@ -67,6 +81,8 @@ body::-webkit-scrollbar {
     max-height: auto;
     margin-right: 10rem;
 }
+
+
 .blob-container{
     position: relative;
 }
@@ -341,6 +357,9 @@ footer{
     body{
         overflow-x: hidden !important;
     }
+    .mute-container{
+        bottom: 20%;
+    }
     .bg-video-desk{
         display: none;
     }
@@ -390,4 +409,5 @@ footer{
     .aboutus-section .row{
         margin-top: 2rem !important;
     }
+
 }

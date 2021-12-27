@@ -7,7 +7,7 @@
 .services-display-section{
     width: 80%;
     position: relative;
-    height: 50vh;
+    height: 100vh;
 }
 
 .card-container{
@@ -19,7 +19,7 @@
     transition: opacity .5s;
 }
 
-.card-fmgc{
+.card-fmcg{
     opacity: 1;
 }
 
@@ -39,4 +39,119 @@ footer a{
 }
 footer a > img{
     width: 3rem;
+}
+
+
+
+.section-light{
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
+    height: 70vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color : #000;
+}
+
+.section-1{
+    background-image: linear-gradient(
+        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/fmgc.jpg);
+}
+
+/* .section-2{
+    background-image: linear-gradient(
+        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/services.jpg);
+} */
+
+.section-3{
+    background-image: linear-gradient(
+        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/ecommerce.jpg);
+        background-position: right center;
+}
+
+.section-2{
+    background-image: linear-gradient(
+        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/beauty.jpeg);
+        background-position: center;
+}
+/* .section-5{
+    background-image: linear-gradient(
+        105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../assets/fashion.jpg);
+        background-position: center;
+} */
+
+section{
+    position: relative;
+}
+.section-dark{
+    background-image: linear-gradient(
+105deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%, transparent 50%), url(../assets/stock.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
+    height: 60vh;
+    margin-top: 5rem;
+    color : #fff;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* section > .case-container{
+    width: 50%;
+    height:inherit;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    font-size: 20px;
+} */
+/* 
+.para-cont{
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+} */
+
+.case-img{
+    width: 60%;
+    max-height: auto;
+}
+@media screen and (max-width : 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+
+    section > div{
+width: 100%;
+    }
+
+    section{
+        background-image: none !important;
+    }
+    .services-display-section{
+    height: 150vh;
+    }
+
+.card-container .h2{
+    font-size: 1rem !important;
+    margin-top: -2rem !important;
+}
+
+.card-container p{
+    font-size: 1rem !important;
+}
+
+.case-img{
+    width: 100%;
+    max-height: auto;
+
+    margin-top: 5rem !important;
+}
+
+.section-light{
+    margin-left: 1rem !important;
+    padding-left: 1.5rem !important;
+}
 }

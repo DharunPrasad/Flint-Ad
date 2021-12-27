@@ -78,30 +78,7 @@ section{
     body{
         overflow-x: hidden;
     }
-    .section-light{
-        background-image: linear-gradient(
-    120deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 85%, transparent 15%), url(../assets/stock.jpg);
-        background-size: 100%;
-        border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
-        height: 70vh;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        color : #000;
-    }
-
-    .section-dark{
-        background-image: linear-gradient(
-    120deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 85%, transparent 15%), url(../assets/stock.jpg);
-    background-size: 100%;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
-    height: 70vh;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    color : #fff;
-    }
-
+    
 
     section > div{
 width: 100%;

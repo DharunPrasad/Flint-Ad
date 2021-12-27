@@ -8,6 +8,7 @@ const darkmodeToggler = document.querySelector(".dark-mode-toggler")
 
 let textcontent;
 selection_container.addEventListener("click",(e) =>{
+    
     if(e.target.classList.contains("btn")){
         textcontent = e.target.textContent.toLowerCase();
         // Buttons color change while clicking
@@ -22,6 +23,8 @@ selection_container.addEventListener("click",(e) =>{
         })
         document.querySelector(`.card-${textcontent}`).style.opacity = "1";
     }
+    // console.log(textcontent)
+
 })
 
 // Nav Function creation

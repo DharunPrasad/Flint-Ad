@@ -216,7 +216,7 @@ submitBtn.addEventListener("click", function(e){
         phoneNo : senderPhone.value,
         message : message.value
     }
-    emailjs.send("service_qw0kxqd", "template_sdpg2s1", obj).then(function(res){
+    emailjs.send("service_0cn034q", "template_sdpg2s1", obj).then(function(res){
         console.log("success",res.status)
     });
 })

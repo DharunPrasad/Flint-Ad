@@ -39,6 +39,8 @@ darkmodeToggler.addEventListener("click", function(){
             
     
     if(darkmodeToggler.checked){
+         //main logo
+         mainLogo.src = "assets/2.png";
             //Nav bar
             navAddFunc("bg-dark");
             navbar.classList.remove("navbar-light");
@@ -60,6 +62,8 @@ darkmodeToggler.addEventListener("click", function(){
     }
 
     else{
+         //main logo
+         mainLogo.src = "assets/1.png";
         //  Navbar
         navRemoveFunc("bg-dark");
         navbar.classList.add("navbar-light");

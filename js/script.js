@@ -7,7 +7,8 @@ const serviceBox_front = document.querySelectorAll(".front-side");
 const servicesBox_back = document.querySelectorAll(".back-side");
 const vision_para = document.querySelectorAll(".profile-container p");
 const mainLogo = document.querySelector(".main-logo");
-
+const muteBtn = document.querySelector(".mute-container");
+const muteBtnSrc = document.querySelector(".mute-container img")
 
 const mob_desk = document.querySelector(".bg-video-desk > video");
 const mob_video = document.querySelector(".bg-video-mob  > video");
@@ -22,6 +23,23 @@ const navAddFunc = (value) => {
 navlink.forEach(el => el.classList.add("text-light"))
 navbar.classList.add("navbar-dark");
 
+
+// Mute button
+muteBtn.addEventListener("click",function(){
+muteBtnSrc.src = "assets/unmute.png";
+if(mob_desk.muted === false && mob_video.muted === false){
+    mob_desk.muted = true;
+    mob_video.muted = true;
+    muteBtnSrc.src = "assets/mute.png";
+
+}
+else{
+    mob_desk.muted = false;
+    mob_video.muted = false;
+    muteBtnSrc.src = "assets/unmute.png";
+
+}
+})
 
 
 window.addEventListener("load", function(){

@@ -188,3 +188,24 @@ const revielingSectionObserver = new IntersectionObserver(revobsCallback,{
 })
 
 revielingSectionObserver.observe(section);
+
+
+// Email js
+const submitBtn = document.querySelector("#submit-btn");
+const companyName = document.querySelector("inputCompany");
+const firstName = document.querySelector("#inputFirstname");
+const lastName = document.querySelector("#inputLastname");
+const senderEamil = document.querySelector("#inputEmail");
+const senderPhone = document.querySelector("#inputPhone");
+const message = document.querySelector("#inputMessage");
+
+submitBtn.addEventListener("click", function(){
+    const obj = {
+        from_firstname : firstName.value,
+        from_lastname : lastName.value,
+        companyName : companyName.value,
+        emailid : senderEamil,
+        phoneNo : phoneNo,
+    }
+    emailjs.send("service_hwd0i8o");
+})

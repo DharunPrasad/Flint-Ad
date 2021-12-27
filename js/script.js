@@ -224,5 +224,6 @@ submitBtn.addEventListener("click", function(e){
     }
     emailjs.send("service_0cn034q", "template_sdpg2s1", obj).then(function(res){
         console.log("success",res.status)
+        alert("We will Get back to you shortly")
     });
 })

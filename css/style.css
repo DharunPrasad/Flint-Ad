@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: Moving-bar 30s linear infinite;
+    animation: Moving-bar 22s linear  infinite;
     transform: translateX(80%);
 
 }

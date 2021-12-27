@@ -21,6 +21,8 @@ const navAddFunc = (value) => {
     navbar.classList.add(`${value}`);
 }
 navlink.forEach(el => el.classList.add("text-light"))
+navbar.classList.add("navbar-dark");
+
 
 
 window.addEventListener("load", function(){
@@ -149,6 +151,8 @@ if(!entry.isIntersecting){
     // observer.unobserve(entry.target);
     // navbar.style.transform = "translateY(0)";
     navlink.forEach(el => el.classList.remove("text-light"))
+    navbar.classList.remove("navbar-dark");
+
     mainLogo.src = "assets/1.png"
 
     if(darkModeToggler.checked){
@@ -177,6 +181,8 @@ if(!entry.isIntersecting){
 
 if(entry.isIntersecting){
     navlink.forEach(el => el.classList.add("text-light"))
+    navbar.classList.add("navbar-dark");
+
     mainLogo.src = "assets/2.png"
     // navbar.style.transform = "translateY(-100%)";
     navbar.classList.remove("bg-light");

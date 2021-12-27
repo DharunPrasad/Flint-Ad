@@ -20,15 +20,22 @@ body::-webkit-scrollbar {
     border-radius: 30px;
   } 
 .main-logo{
-    width: 10%;
+    width: 10% !important;
     max-height: auto;
+}
+.bg-video-desk{
+    display: block;
+}
+
+.bg-video-mob{
+    display: none;
 }
 .rounded-oval{
     border-radius: 100px;
 }
 .intro-section{
     height: 100vh;
-    background-color: cyan;
+    overflow: hidden;
     /* margin-top: 4.5rem; */
 }
 
@@ -330,8 +337,18 @@ footer{
     body{
         overflow-x: hidden !important;
     }
+    .bg-video-desk{
+        display: none;
+    }
+    .bg-video-mob{
+        display: block;
+        width: 20%;
+        max-height: auto;
+    }
+
     .main-logo{
-        width: 30%;
+        position: relative;
+        width: 30% !important;
         max-height: auto;
     }
     .intro-section{

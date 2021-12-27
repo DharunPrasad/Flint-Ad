@@ -8,6 +8,10 @@ const servicesBox_back = document.querySelectorAll(".back-side");
 const vision_para = document.querySelectorAll(".profile-container p");
 const mainLogo = document.querySelector(".main-logo");
 
+
+const mob_desk = document.querySelector(".bg-video-desk video source");
+const mob_video = document.querySelector(".bg-video-mob video source");
+
 // Nav Function creation
 const navRemoveFunc = (value) =>{
     navbar.classList.remove(`${value}`);
@@ -53,6 +57,7 @@ window.addEventListener("load", function(){
             })
         })
     }
+    // if(mob_desk)
 })
 
 
@@ -61,8 +66,7 @@ darkModeToggler.addEventListener("click",function(){
         document.body.style.backgroundColor = "#242B2E";
         document.querySelectorAll(".body-style").forEach(e => {
             e.style.color = "#fff";
-            //main logo
-            mainLogo.src = "assets/2.png";
+        
             //Nav bar
             navAddFunc("bg-dark");
             navbar.classList.remove("navbar-light");
@@ -89,14 +93,15 @@ darkModeToggler.addEventListener("click",function(){
                document.querySelectorAll(".aboutus-section .card").forEach(el => {
                 el.classList.add("dark-blue")
             })
+                //main logo
+                mainLogo.src = "assets/2.png";
         })
     }
     else{
         document.body.style.backgroundColor = "#fff";
         document.querySelectorAll(".body-style").forEach(e => {
             e.style.color = "#000";
-                            //main logo
-            mainLogo.src = "assets/1.png";
+                            
 
                 //  Navbar
                 navRemoveFunc("bg-dark");
@@ -124,7 +129,8 @@ darkModeToggler.addEventListener("click",function(){
             document.querySelectorAll(".aboutus-section .card").forEach(el => {
                 el.classList.remove("dark-blue")
             })
-
+// main logo
+mainLogo.src = "assets/1.png";
 
     }
 })

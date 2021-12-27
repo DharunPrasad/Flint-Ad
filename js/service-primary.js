@@ -5,6 +5,7 @@ const selection_buttons = document.querySelectorAll(".selection-btn-container bu
 const navbar = document.querySelector("#navbar");
 const navlink = document.querySelectorAll(".nav-link");
 const darkmodeToggler = document.querySelector(".dark-mode-toggler")
+const mainLogo = document.querySelector(".main-logo")
 
 let textcontent;
 selection_container.addEventListener("click",(e) =>{

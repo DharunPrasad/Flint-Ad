@@ -171,6 +171,9 @@ if(!entry.isIntersecting){
     navlink.forEach(el => el.classList.remove("text-light"))
     navbar.classList.remove("navbar-dark");
 
+    document.querySelector("#flexSwitchCheckDefault").style.visibility= "visible";
+
+
     mainLogo.src = "assets/1.png"
 
     if(darkModeToggler.checked){
@@ -198,6 +201,8 @@ if(!entry.isIntersecting){
 }
 
 if(entry.isIntersecting){
+    document.querySelector("#flexSwitchCheckDefault").style.visibility = "hidden";
+
     navlink.forEach(el => el.classList.add("text-light"))
     navbar.classList.add("navbar-dark");
 

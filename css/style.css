@@ -358,6 +358,16 @@ footer{
     max-height: auto;
 }
 
+@media screen and (max-width : 800px) {
+    .aboutus-section .card{
+        width: 100%;
+        
+    }
+    .aboutus-section .row{
+        margin-top: 2rem !important;
+    }
+}
+
 @media screen and (max-width : 480px) {
     body{
         overflow-x: hidden !important;

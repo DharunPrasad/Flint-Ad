@@ -181,6 +181,8 @@ if(!entry.isIntersecting){
     navbar.classList.remove("bg-transperant");
     mainLogo.src = "assets/2.png"
     navlink.forEach(el => el.classList.add("text-light"))
+    navbar.classList.add("navbar-dark");
+
 
 
     }

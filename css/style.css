@@ -54,6 +54,7 @@ body::-webkit-scrollbar {
 
 .navbar{
     transition: all .5s;
+    height: 4rem !important;
 }
 
 .movables{
@@ -382,6 +383,9 @@ footer{
         display: block;
         width: 20%;
         max-height: auto;
+    }
+    .navbar{
+        height: fit-content !important;
     }
 
     .main-logo{

@@ -255,6 +255,8 @@ const message = document.querySelector("#inputMessage");
 
 submitBtn.addEventListener("click", function(e){
     e.preventDefault()
+
+    if(companyName.value >= 1 && firstName.value >= 1 && lastName.value >=1 && senderEamil.checkValidity()){
     const obj = {
         from_firstname : firstName.value,
         from_lastname : lastName.value,
@@ -267,4 +269,5 @@ submitBtn.addEventListener("click", function(e){
         console.log("success",res.status)
         alert("We will Get back to you shortly")
     });
+}
 })

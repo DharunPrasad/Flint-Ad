@@ -179,6 +179,10 @@ if(!entry.isIntersecting){
     if(darkModeToggler.checked){
     navbar.classList.add("bg-dark");
     navbar.classList.remove("bg-transperant");
+    mainLogo.src = "assets/2.png"
+    navlink.forEach(el => el.classList.add("text-light"))
+
+
     }
 
     if(!darkModeToggler.checked){

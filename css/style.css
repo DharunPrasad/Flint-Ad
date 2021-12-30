@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
   }
    
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(207, 54, 54);
+    background-color: rgb(177, 156, 156);
     border-radius: 30px;
   } 
 .main-logo{
@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: Moving-bar 22s linear  infinite;
+    animation: Moving-bar 28s linear  infinite;
     transform: translateX(80%);
 
 }

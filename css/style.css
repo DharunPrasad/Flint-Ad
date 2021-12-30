@@ -411,6 +411,9 @@ footer{
     .case-study-mob{
         text-align: center;
     }
+    .about-movable-container{
+        display: none;
+    }
     .aboutus-section .card{
         width: 100%;
     }

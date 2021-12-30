@@ -271,3 +271,16 @@ submitBtn.addEventListener("click", function(e){
     });
 }
 })
+
+
+// Navbar collapsing 
+const navtoggler =   document.querySelector(".navbar-toggler");
+const navbarCollapse = document.querySelector(".navbar-collapse");
+navlink.forEach(el => {
+    el.addEventListener("click",function(){
+          navtoggler.setAttribute("aria-expanded", "false")
+            navtoggler.classList.add("collapsed")
+            navbarCollapse.classList.remove("show");
+            navbarCollapse.classList.add("collapse")
+        })
+})
